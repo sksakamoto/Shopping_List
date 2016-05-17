@@ -18,7 +18,7 @@ def remove_item(item):
 	
 def menu():
 	global menu_choice
-	menu_choice = raw_input("What would you like to do? 0 - Main Menu, 1 - Show Current List, 2 - Add an Item to Shopping List")
+	menu_choice = raw_input("What would you like to do? 0 - Main Menu, 1 - Show Current List, 2 - Add an Item to List ")
 	return menu_choice
 
 def main():
@@ -32,7 +32,7 @@ def main():
 		elif menu_choice == 1:
 			print shopping_list
 		else:
-			add_item()
+			add_item(raw_input("What do you want to add? "))
 #	add_item("kale")
 #	remove_item("kale")
 
